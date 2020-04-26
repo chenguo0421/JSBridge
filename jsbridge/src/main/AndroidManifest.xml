@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cg.jsbridge.core" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 振动权限，扫码完成时振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 指纹权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <!-- 获取手机状态信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application>
+        <!-- 新增7.0针对文件权限的provider -->
+<!--        <provider-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:authorities="com.cg.jsbridge.core.fileprovider"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/filepaths"/>-->
+
+<!--        </provider>-->
+
+        <!-- 注意，此处的cn.com.cg.base.fileprovider应当是： 包名+fileprovider -->
+        <!-- 注意，此处的com.cg.core.camera.CGFileProvider应当是CGFileProvider类所在的路径 -->
+        <provider
+            android:name=".camera.CGBaseFileProvider"
+            android:authorities="${applicationId}.CGCamera.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath1" />
+        </provider>
+        <activity android:name=".camera.CameraBridgeActivity"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".jsbridge.web.WebActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+        </activity>
+        <activity android:name=".contact.ContactBridgeActivity"
+            android:theme="@style/Transparent"></activity>
+    </application>
+
+</manifest>

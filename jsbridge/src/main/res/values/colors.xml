@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <!-- 分割线的颜色 -->
+	<color name="line_color">#ababab</color>
+    <color name="white">#ffffff</color>
+    <color name="w_red">#ee1e2d</color>
+    <!-- 小红色 -->
+    <color name="smallred">#f5757f</color>
+    <!-- 白色 -->
+    <color name="ivory">#fffff0</color>
+    <!-- 象牙色 -->
+    <color name="lightyellow">#ffffe0</color>
+    <!-- 亮黄色 -->
+    <color name="yellow">#ffff00</color>
+    <!-- 黄色 -->
+    <color name="snow">#fffafa</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#fffaf0</color>
+    <!-- 花白色 -->
+    <color name="lemonchiffon">#fffacd</color>
+    <!-- 柠檬绸色 -->
+    <color name="cornsilk">#fff8dc</color>
+    <!-- 米绸色 -->
+    <color name="seaShell">#fff5ee</color>
+    <!-- 海贝色 -->
+    <color name="lavenderblush">#fff0f5</color>
+    <!-- 淡紫红 -->
+    <color name="papayawhip">#ffefd5</color>
+    <!-- 番木色 -->
+    <color name="blanchedalmond">#ffebcd</color>
+    <!-- 白杏色 -->
+    <color name="mistyrose">#ffe4e1</color>
+    <!-- 浅玫瑰色 -->
+    <color name="bisque">#ffe4c4</color>
+    <!-- 桔黄色 -->
+    <color name="moccasin">#ffe4b5</color>
+    <!-- 鹿皮色 -->
+    <color name="navajowhite">#ffdead</color>
+    <!-- 纳瓦白 -->
+    <color name="peachpuff">#ffdab9</color>
+    <!-- 桃色 -->
+    <color name="gold">#ffd700</color>
+    <!-- 金色 -->
+    <color name="pink">#ffc0cb</color>
+    <!-- 粉红色 -->
+    <color name="lightpink">#ffb6c1</color>
+    <!-- 亮粉红色 -->
+    <color name="orange">#fd7903</color>
+    <!-- 橙色 -->
+    <color name="lightsalmon">#ffa07a</color>
+    <!-- 亮肉色 -->
+    <color name="darkorange">#ff8c00</color>
+    <!-- 暗桔黄色 -->
+    <color name="coral">#ff7f50</color>
+    <!-- 珊瑚色 -->
+    <color name="hotpink">#ff69b4</color>
+    <!-- 红紫色 -->
+    <color name="red">#ff0000</color>
+    <!-- 红色 -->
+        <color name="qred">#bb0000</color>
+    <!-- qian红色 -->
+    <color name="oldlace">#fdf5e6</color>
+    <!-- 老花色 -->
+    <color name="lightgoldenrodyellow">#fafad2</color>
+    <!-- 亮金黄色 -->
+    <color name="skyblue">#87ceeb</color>
+    <!-- 天蓝色 -->
+    <color name="gray">#dedede</color>
+    <!-- 灰色 -->
+    <color name="grey">#7c7b7b</color>
+    <!-- 暗绿色 -->
+    <color name="blue">#005dc1</color>
+    <!-- 暗灰色 -->
+    <color name="brown">#a52a2a</color>
+    <!-- 蓝色 -->
+    <color name="mediumblue">#0000cd</color>
+    <!-- 中兰色 -->
+    <color name="darkblue">#00008b</color>
+    <!-- 暗蓝色 -->
+    <color name="navy">#000080</color>
+    <!-- 黑色 -->
+    <color name="black">#666666</color>
+    <!-- 黑色 -->
+    <color name="progressbgblue">#0085d0</color>
+    <color name="transparent">#00000000</color>
+    <color name="set_hint_nor">#a7a7a7</color>
+    <color name="bg_color">#e1e1e1</color>
+    <color name="transparent_bg">#00000000</color>
+    <color name="rate">#f95c2f</color>
+    <color name="theme_back">#f4f4f4</color>
+    <color name="head_bg">#0085d0</color>
+    <color name="progress_ng">#dadada</color>
+    <color name="dialog_bg">#31414b</color>
+    <color name="darkgray">#7b7b7b</color>
+    <color name="textblackcolor">#051b28</color>
+    <color name="textbluecolor">#0085d0</color>
+    <color name="roundColor">#f5821f</color>
+    <color name="roundProgressColor">#999999</color>
+    <color name="hintColor">#d7d7d7</color>
+    <color name="pressBarBg">#f2f2f2</color>
+    <color name="lightBg">#fefefe</color>
+
+    <color name="logictics_state_blue">#ff00ccff</color>
+    
+    <!-- 分割线颜色 -->
+    <color name="viewline_color">#f1f1f1</color>
+    <color name="small_red">#fa6575</color>
+    
+       
+    <!-- 易道博识颜色 -->
+    <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="viewfinder_frame">#ff1a6cc7</color>
+  <color name="viewfinder_laser">#ff1a6cc7</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="viewfinder_box">#60000000</color>
+  <color name="tipcolor">#ff1a6cc7</color>
+  <color name="titlebg">#ff1a6cc7</color>
+  <color name="titletv">#ffffff</color>
+  
+  
+   <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    
+    
+    <!-- pickerview -->
+     <color name="pickerview_timebtn_nor">#ff0000</color>
+    <color name="pickerview_timebtn_pre">#fa6575</color>
+    <color name="pickerview_bg_topbar">#f1f1f1</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="litter_small_red">#ff6060</color>
+    
+       <!-- QRCode scanner color begin -->
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- QRCode scanner color end -->
+    
+    
+    <!-- 指纹集成 -->
+    <color name="texttitle">#333333</color>
+    <color name="textback">#999999</color>
+    <color name="textback_longin">#FF3333</color>
+    <color name="view_white">#FFFFFF</color>
+    <color name="view_background">#F4F7F9</color>
+    <color name="view_log_background">#F6F8F9</color>
+    <color name="line_log">#D2D2D2</color>
+    <color name="line_money">#E5E5E5</color>
+    <color name="text_money">#222222</color>
+    <color name="text_bule_back">#5566E9</color>
+    <!-- 指纹 end -->
+</resources>

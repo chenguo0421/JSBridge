@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JSBridge</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no"/>
+    <script src="file:///android_asset/JSBridge.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var sendPost=function (){
+                    var params={
+                        "key1":"value1",
+                        "key2":"value2"
+                     };
+
+                    JSBridge.post('http://baidu.com',params,function(res){alert(JSON.stringify(res))});
+                };
+        
+        var sendGet=function (){
+            var params={
+                "key1":"value1",
+                "key2":"value2"
+             };
+
+            JSBridge.get('http://baidu.com',params,function(res){alert(JSON.stringify(res))});
+        };
+        
+        
+        var openCamera=function (){
+        	JSBridge.NativeCall('CPCamera','openCamera',{},function(res){
+        		alert(JSON.stringify(res));
+        		var div=document.getElementById("camera_div");
+        		var newchild = document.createElement("div");
+        		newchild.id='newdiv';
+        		newchild.innerHTML = '<img src=data:image/png;base64,'+res.photo_base64+' height="auto" width="100%" />';
+        		div.appendChild(newchild);
+        	});
+        };
+        
+        
+        var openPhotos=function (){
+        	JSBridge.NativeCall('CPCamera','openPhotos',{},function(res){
+        		alert(JSON.stringify(res));
+        		var div=document.getElementById("photo_div");
+        		var newchild = document.createElement("div");
+        		newchild.id='newdiv';
+        		newchild.innerHTML = '<img src=data:image/png;base64,'+res.photo_base64+' height="auto" width="100%" />';
+        		div.appendChild(newchild);
+        	});
+        };
+        
+        var getContact=function (){
+        	JSBridge.NativeCall('CPContact','getContact',{},function(res){
+        		alert(JSON.stringify(res));
+        		var div=document.getElementById("contact_div");
+        		
+        		
+        		var newchild = document.createElement("div");
+        		newchild.id='newdiv';
+        		newchild.innerHTML ='<p>'+res.phone+'</p>';
+        		div.appendChild(newchild);
+        	});
+        };
+        
+        var showPickerView=function (){
+        	JSBridge.NativeCall('CPNativeCall','showPickerView',{},function(res){
+        		var div=document.getElementById("pickerview_div");
+        		var newchild = document.createElement("div");
+        		newchild.id='newdiv';
+        		newchild.innerHTML ='<p>'+res.value+','+res.key+'</p>';
+        		div.appendChild(newchild);
+        	});
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div>
+    <h3>JSBridge 测试</h3>
+</div>
+<ul class="list">
+    <li>
+        <div>
+            <button onclick="JSBridge.NativeCall('CPNativeCall','showToast',{'params':'Hello JSBridge'},function(res){alert(JSON.stringify(res))})">
+                测试showToast
+            </button>
+        </div>
+    </li>
+    <br/>
+</ul>
+
+<ul class="list">
+    <li>
+        <div>
+            <button onclick="JSBridge.NativeCall('CPNativeCall','showDialog',{'params':'this is dialog'},function(res){alert(JSON.stringify(res))})">
+                测试showDialog
+            </button>
+        </div>
+    </li>
+    <br/>
+</ul>
+
+
+<ul class="list">
+    <li>
+        <div>
+
+            <button onclick="sendPost()">
+                测试交易转发Post方式
+            </button>
+        </div>
+    </li>
+    <li>
+        <div>
+
+            <button onclick="sendGet()">
+                测试交易转发Get方式
+            </button>
+        </div>
+    </li>
+    
+
+</ul>
+
+
+
+
+<ul class="list">
+    <li>
+        <div id="camera_div">
+
+            <button onclick="openCamera()">
+                	测试相机调用
+            </button>
+        </div>
+    </li>
+ 
+    
+
+</ul>
+
+
+<ul class="list">
+    <li>
+        <div id="photo_div">
+
+            <button onclick="openPhotos()">
+                	测试相册调用
+            </button>
+        </div>
+    </li>
+ 
+    
+
+</ul>
+
+
+
+
+<ul class="list">
+    <li>
+        <div id="contact_div">
+
+            <button onclick="getContact()">
+                	测试联系人获取
+            </button>
+        </div>
+    </li>
+ 
+    
+
+</ul>
+
+
+
+<ul class="list">
+    <li>
+        <div id="pickerview_div">
+
+            <button onclick="showPickerView()">
+                	其它扩展测试
+            </button>
+        </div>
+    </li>
+ 
+    
+
+</ul>
+
+
+</body>
+
+</html>
